@@ -225,18 +225,18 @@ packages:
     dependency: transitive
     description:
       name: video_player_android
-      sha256: "0fc42778d794465f12456ccdade3e729e4339c8a112f9e58d170dc00f17b75f2"
+      sha256: "83cd20b76749ef3d662742c650a0eb39f774960286a33d706a75c551874dbbb1"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.11"
+    version: "2.3.12"
   video_player_avfoundation:
     dependency: transitive
     description:
       name: video_player_avfoundation
-      sha256: c29bdae387091ee988a29bbb6f94341e2134a337d0bf7f6b8a087b4ba49d4d2f
+      sha256: "9d8585be0d63943f0dc46e0aed6697a715f64d7faab39b6053ecf9b6da3ca01d"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.4.1"
   video_player_platform_interface:
     dependency: transitive
     description:
@@ -249,10 +249,10 @@ packages:
     dependency: transitive
     description:
       name: video_player_web
-      sha256: d635bb2834f2b14cfd52c7fc9307a95dffbe768d116dd6047a4ecbba203289c8
+      sha256: fb3bbeaf0302cb0c31340ebd6075487939aa1fe3b379d1a8784ef852b679940e
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.14"
+    version: "2.0.15"
 sdks:
   dart: ">=2.19.2 <3.0.0"
   flutter: ">=3.3.0"
