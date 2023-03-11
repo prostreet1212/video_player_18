@@ -3,7 +3,6 @@ import 'package:video_player/video_player.dart';
 import 'package:video_player_18/widgets/play_panel.dart';
 import 'package:video_player_18/widgets/rewind_panel.dart';
 
-
 class VideoPlayerScreen extends StatefulWidget {
   const VideoPlayerScreen({Key? key}) : super(key: key);
 
@@ -22,20 +21,16 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     _controller = VideoPlayerController.network(
         'http://kdrc.ru/wp-content/uploads/2023/03/korn.mp4');
     _controller!.addListener(() {
-      position=_controller!.value.position;
-      setState((){});
+      position = _controller!.value.position;
+      setState(() {});
     });
     _controller!.setLooping(false);
 
     _controller!.initialize().then((value) {
-      setState((){});
+      setState(() {});
     });
     _controller!.play();
-
-
   }
-
-
 
   @override
   void dispose() {
@@ -67,12 +62,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                           },
                         ),
                         isShow
-                            ?
-                        Center(
-                          child: RewindPanel(
+                            ? Center(
+                                child: RewindPanel(
                                 controller: _controller,
                                 position: position,
-                               ))
+                              ))
                             : Container(),
                         isShow
                             ? PlayPanel(controller: _controller)
